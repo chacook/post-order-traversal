@@ -28,9 +28,7 @@ def solution(h, q):
     return parent_values
     
 def main():
-    l = []
-    for i in range(1000000):
-        l.append(i)
+    l = range(1000000)
        
     parents = solution(30, l)
     
