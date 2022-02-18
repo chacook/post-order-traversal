@@ -28,8 +28,7 @@ def solution(h, q):
     return parent_values
     
 def main():
-    l = range(1000000)
-       
+    l = range(1000000) 
     parents = solution(30, l)
     
 if __name__ == "__main__":
