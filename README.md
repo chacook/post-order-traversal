@@ -11,6 +11,6 @@ For example, a perfect binary tree of height 4 will have 15 as its root node. It
 
 The cool thing is we don't have to actually create the tree, we start at the value of the root node and calculate the value of current node's children and make our way down the tree. This ends up finding the solution in O(log(H) * n) time, where H is the height of the tree and n is the length of the list of values we're trying to find.
 
-After coding up my solution in Python, I thought it would be fun to see how much faster the C implementation is. Each solution had to find the parent node value for every number from 1 to 1 million from a perfect binary tree with height 30.
+After coding up my solution in Python, I thought it would be fun to see how much faster the C implementation is. Each solution had to find the parent node value for every number from 1 to 1 million from a perfect binary tree of height 30.
 
 Python: 8.33 seconds, C: 0.175 seconds.
