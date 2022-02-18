@@ -7,7 +7,7 @@ I ended up drawing some examples of perfect binary trees by hand, and then visit
   2) the right child always has a value of X - 1
   3) the root node always has the value (2^H) - 1, where H is the height of the tree
 
-For example, a perfect binary tree of height 4 will have 15 as it's root node. Its left child = 15 - 2^(4 - 1) = 7 and its right child = 15 - 1 = 14.
+For example, a perfect binary tree of height 4 will have 15 as its root node. Its left child = 15 - 2^(4 - 1) = 7 and its right child = 15 - 1 = 14.
 
 The cool thing is we don't have to actually create the tree, we start at the value of the root node and calculate the value of current node's children and make our way down the tree. This ends up finding the solution in O(log(H) * n) time, where H is the height of the tree and n is the length of the list of values we're trying to find.
 
