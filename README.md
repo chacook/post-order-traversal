@@ -13,5 +13,4 @@ The cool thing is we don't have to actually create the tree, we start at the val
 
 After coding up my solution in Python, I thought it would be fun to see how much faster the C implementation is. Each solution had to find the parent node value for every number from 1 to 1 million, on a perfect binary tree.
 
-Python: 8.33 seconds
-C: 0.175 seconds
+Python: 8.33 seconds, C: 0.175 seconds.
