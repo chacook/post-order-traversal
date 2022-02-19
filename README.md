@@ -9,8 +9,8 @@ I ended up drawing some examples of perfect binary trees by hand, and then visit
 
 For example, a perfect binary tree of height 4 will have 15 as its root node. Its left child = 15 - 2^(4 - 1) = 7 and its right child = 15 - 1 = 14. Node 7 is on level 3 of the tree, so it will have a left child = 7 - 2^(3 - 1) = 3 and a right child = 7 - 1 = 6.
 
-The cool thing is we don't have to actually create the tree, we start at the value of the root node and calculate the value of current node's children and make our way down the tree. This ends up finding the solution in O(log(H) * n) time, where H is the height of the tree and n is the length of the list of values we're trying to find.
+The cool thing is we don't have to actually create the tree, we can just start at the value of the root node and calculate the values of the current node's children, decide whether to go left or right, and repeat. This ends up finding the solution in O(n * log(H)) time, where n is the length of the list of values we're trying to find and H is the height of the tree.
 
-After coding up my solution in Python, I thought it would be fun to see how much faster the C implementation is. Each solution had to find the parent node value for every number from 1 to 1 million from a perfect binary tree of height 30.
+After coding up my solution in Python, I thought it would be fun to see how much faster the C implementation is. For my benchmark, each solution had to find the parent node value for every number from 1 to 1 million from a perfect binary tree of height 30.
 
 Python: 8.33 seconds, C: 0.175 seconds.
