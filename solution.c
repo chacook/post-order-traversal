@@ -39,7 +39,7 @@ int64_t* solution(int64_t h, int64_t* list, int len){
 		
 		cur_node = root;
 		
-		for (cur_height = h; cur_height >= 1; cur_height--){
+		for (cur_height = h; cur_height > 1; cur_height--){
 			left_child = cur_node - two_to_n(cur_height-1);
 			right_child = cur_node - 1;
 					
