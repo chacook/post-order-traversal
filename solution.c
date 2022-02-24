@@ -32,7 +32,7 @@ int64_t* solution(int64_t h, int64_t* list, int len){
 	}
 	
 	for (int i = 0; i < len; i++){
-		if (list[i] >= root || list[i] == 0){
+		if (list[i] >= root || list[i] <= 0){
 			parents[i] = -1;
 			continue;
 		}
